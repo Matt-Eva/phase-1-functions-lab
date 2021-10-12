@@ -1,5 +1,8 @@
 // Code your solution in this file!
-// you can use Math.abs() to return the absolute value of a difference.
+/* you can use Math.abs() to return the absolute value of a difference.
+function distanceFromHqInBlocksTwo(address) {
+return Math.abs(address - 42);
+}*/
 const hq = 42;
 
 function distanceFromHqInBlocks(address){
@@ -26,9 +29,9 @@ function distanceTravelledInFeet(address1, address2){
     let travel = distanceTravelledInFeet(address1, address2);
     if (travel < 400) {
         return 0;
-    } else if (travel < 2000 ) {
+    } else if (travel <= 2000 ) {
         return ((travel - 400) * .02);
-    } else if (travel < 2500) {
+    } else if (travel <= 2500) {
         return 25;
     } else {
         return 'cannot travel that far';
